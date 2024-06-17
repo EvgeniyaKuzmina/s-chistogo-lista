@@ -84,7 +84,7 @@ blockquote {
 
 .cover {
     padding: 7px 0 30px 20px;
-    background-image: url("./images/cover.svg");
+    background-image: url("/images/cover.svg");
     background-repeat: no-repeat;
     background-position: 21px;
     background-size: contain;
