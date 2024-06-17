@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #c4bfbf;
+    
 
 }
 
@@ -19,16 +20,17 @@ blockquote {
 }
 
 .content-section {
-    box-sizing: border-box;
+    
     background-color: #131313;
-    font-family: Inter Regular, sans-serif;  /*верно ли использовать настройку шрифта в свойстве общим для всех секций, 
+    font-family: Inter, sans-serif;  /*верно ли использовать настройку шрифта в свойстве общим для всех секций, 
                                               если данный шрифт преобладает на всем ленде? Или лучше (даже если шрифт часто повторяется)
                                               указывать этот шрифт внутри свойства для конкретной секции?*/
     max-width: 360px;
-    padding: 0 20px 0;
+    padding: 0 20px 21px 0;
     margin-left: auto;
     margin-right: auto;
     color: #F5F5F5;
+    box-sizing: border-box;
 }
 
 .content-section_theme_bright {
@@ -62,6 +64,9 @@ blockquote {
 
 .header__menu-list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .header__menu-item {
@@ -70,6 +75,7 @@ blockquote {
     font-weight: 400;
     line-height: 19.2px;
     text-decoration-line: underline;
+    
 }
 
 .header__menu-item_active {
@@ -77,22 +83,25 @@ blockquote {
 }
 
 .cover {
-    padding-left: 7px 0 30px 20px;
+    padding: 7px 0 30px 20px;
     background-image: url("./images/cover.svg");
     background-repeat: no-repeat;
     background-position: 21px;
-    background-size: cover;
+    background-size: contain;
 }
 
 .cover__title {
     display: flex;
     flex-direction: column;
     color: #FFF;
-    font-family: "EB Garamond Regular", serif;
+    font-family: "EB Garamond Regular", serif; /*Мне кажется, что как будто шрифт EB Garamond у меня и в мактет отличается. 
+                                               Как будто, если даже сравнить надпись «С чистого листа» она выглядит иначе у меня и в макете.
+                                               Но шрифт точно один и тот же. Как так, в чём я ошиблась?*/
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+    padding-right: 24px;;
 }
 
 .text-center {
@@ -104,7 +113,7 @@ blockquote {
 }
 
 .intro {
-    padding: 30px 20px 38px;
+    padding: 0px 20px 38px;
 }
 
 .intro__heading {
@@ -186,6 +195,7 @@ blockquote {
     gap: 8px;
     border-radius: 30px;
     margin-top: 32px;
+    line-height: 21.6px;
 }
 
 .card__author-photo {
@@ -216,6 +226,7 @@ blockquote {
     font-style: normal;
     font-weight: 400;
     line-height: 135%;
+    color: #131313;
 }
 
 .card_theme_dark {
@@ -224,7 +235,7 @@ blockquote {
 
 .card_theme_bright {
     background-color: var(--yellow-bg, #FEE42A);
-    color: var(--black-bg, #131313);
+    color:  #131313;
 }
 
 .cards-list {

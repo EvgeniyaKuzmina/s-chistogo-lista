@@ -1,0 +1,45 @@
+@font-face {
+    src:
+        local('ebgaramondmedium'), local('ebgaramond-medium'), local('Ebgaramond Medium'), local('Ebgaramond'),
+        url(fonts/ebgaramondmedium.woff) format('woff'),
+        url(fonts/ebgaramondmedium.ttf) format('truetype'),
+        url(fonts/ebgaramondmedium.woff2) format('woff2');
+    font-weight: medium;
+    font-family: 'EB Garamond Medium';
+    /** название шрифта**/
+    font-display: swap;
+}
+
+@font-face {
+    src:
+        local('ebgaramondregular'), local('ebgaramond-regular'), local('Ebgaramond Regular'), local('Ebgaramond'),
+        url(fonts/ebgaramondregular.woff) format('woff'),
+        url(fonts/ebgaramondregular.ttf) format('truetype'),
+        url(fonts/ebgaramondregular.woff2) format('woff2');
+    font-family: 'EB Garamond Regular';
+    /** название шрифта**/
+    font-display: swap;
+}
+
+
+@font-face {
+
+    src: local('interbold'), local('inter-bold'), local('Inter Bold'), local('Inter'),
+        url(fonts/interbold.woff)format('woff'),
+        url(fonts/interbold.ttf) format('truetype'),
+        url(fonts/interbold.woff2) format('woff2');
+    font-weight: bold;
+    font-family: Inter;
+    font-display: swap;
+}
+
+@font-face {
+
+    src: local('interregular'), local('inter-regular'), local('Inter Regular'), local('Inter'),
+        url(fonts/interregular.woff)format('woff'),
+        url(fonts/interregular.ttf) format('truetype'),
+        url(fonts/interregular.woff2) format('woff2');
+    font-family: Inter;
+    font-weight: regular;
+    font-display: swap;
+}
