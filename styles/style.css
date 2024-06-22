@@ -20,11 +20,8 @@ blockquote {
 }
 
 .content-section {
-    
     background-color: #131313;
-    font-family: Inter, sans-serif;  /*верно ли использовать настройку шрифта в свойстве общим для всех секций, 
-                                              если данный шрифт преобладает на всем ленде? Или лучше (даже если шрифт часто повторяется)
-                                              указывать этот шрифт внутри свойства для конкретной секции?*/
+    font-family: Inter, sans-serif;
     max-width: 360px;
     padding: 0 20px 21px 0;
     margin-left: auto;
@@ -84,7 +81,7 @@ blockquote {
 
 .cover {
     padding: 7px 0 30px 20px;
-    background-image: url("/images/cover.svg");
+    background-image: url("../images/cover.svg");
     background-repeat: no-repeat;
     background-position: 21px;
     background-size: contain;
@@ -128,6 +125,11 @@ blockquote {
     margin-bottom: 24px;
 }
 
+.intro__title {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
 
 .intro__date {
     white-space: nowrap;
